@@ -9,12 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'AsteriCloud',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Login screen'),
     );
   }
 }
@@ -33,7 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     final emailField = TextField(
       obscureText: false,
       style: style,
@@ -163,8 +162,8 @@ class NavigationBar extends StatelessWidget {
       },
       child: new Image(
         image: new AssetImage("assets/home.png"),
-        height: 50.0,
-        width: 50.0,
+        height: 40.0,
+        width: 40.0,
       ),
     );
 
@@ -175,8 +174,8 @@ class NavigationBar extends StatelessWidget {
       },
       child: new Image(
         image: new AssetImage("assets/push.png"),
-        height: 50.0,
-        width: 50.0,
+        height: 40.0,
+        width: 40.0,
       ),
     );
 
@@ -187,8 +186,8 @@ class NavigationBar extends StatelessWidget {
       },
       child: new Image(
         image: new AssetImage("assets/graph.png"),
-        height: 50.0,
-        width: 50.0,
+        height: 40.0,
+        width: 40.0,
       ),
     );
 
@@ -199,16 +198,16 @@ class NavigationBar extends StatelessWidget {
       },
       child: new Image(
         image: new AssetImage("assets/auth.png"),
-        height: 50.0,
-        width: 50.0,
+        height: 40.0,
+        width: 40.0,
       ),
     );
 
     return new Container(
-        height: 50.0,
+        height: 40.0,
         margin: const EdgeInsets.symmetric(
           vertical: 16.0,
-          horizontal: 24.0,
+          horizontal: 16.0,
         ),
         child: new Stack(
           children: <Widget>[
