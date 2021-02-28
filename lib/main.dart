@@ -14,21 +14,21 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Login screen'),
+      home: LoginPage(title: 'Login screen'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  LoginPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _LoginPageState extends State<LoginPage> {
   TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
 
   @override
@@ -220,7 +220,7 @@ class NavigationBar extends StatelessWidget {
   }
 }
 
-class PlanetRow extends StatelessWidget {
+class CardRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cloudThumbnail = new Container(
@@ -271,7 +271,7 @@ class BoardPage extends StatelessWidget {
           children: [
             new Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[new PlanetRow()]),
+                children: <Widget>[new CardRow()]),
             new Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [new NavigationBar()],
