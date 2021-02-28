@@ -46,6 +46,11 @@ flutter:
 
   assets:
     - logo.png
+    - cloud.png
+    - home.png
+    - push.png
+    - graph.png
+    - auth.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
